@@ -112,11 +112,14 @@ const minmax = (board, symbol, player) => {
     return moves[bestMove];
 }
 
-const startGame = () =>{
+//takes a 3 x 3 2d array of tiles
+//0 == O, 1 == X, -1 == empty tile
+//returns the best move for ai
+const startGame = (grid) =>{
     //code for testing
-    let board = [[1,0,1],[-1,-1,-1],[-1,-1,-1]];
+    let board = grid;
     let move = minmax(board, 1, true);
-    console.log("final move: ", move);
+    return move;
 }
 
 export default startGame;

@@ -1,0 +1,29 @@
+
+
+.board-grid{
+    max-width: 27.4rem;
+    font-size: 9rem;
+    border: .1rem solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 9rem;
+}
+
+.board-row{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.board-col{
+    min-height: 9rem;
+    min-width: 9rem;
+    border: .1rem solid black;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.board-col:hover{
+    background-color: aquamarine;    
+}

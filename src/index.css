@@ -1,0 +1,7 @@
+/*1 rem == 10px*/
+html, body{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
