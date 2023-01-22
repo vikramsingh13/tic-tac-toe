@@ -115,11 +115,11 @@ const minmax = (board, symbol, player) => {
 //takes a 3 x 3 2d array of tiles
 //0 == O, 1 == X, -1 == empty tile
 //returns the best move for ai
-const startGame = (grid) =>{
+const getBestMove = (grid, symbol = 1, player = true) =>{
     //code for testing
     let board = grid;
     let move = minmax(board, 1, true);
     return move;
 }
 
-export default startGame;
+export {getBestMove, checkWin};

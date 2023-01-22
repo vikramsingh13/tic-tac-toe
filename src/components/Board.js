@@ -13,7 +13,12 @@ const Board = ({handleBoardClick, grid}) => {
                 } else {
                     col = "O"
                 }
-                return <div className='board-col' row={i} col={j} key={i*10 + j}>
+                return <div 
+                className='board-col' 
+                row={i} 
+                col={j} 
+                key={i*10 + j}
+                >
                         {col}
                     </div>
             });
